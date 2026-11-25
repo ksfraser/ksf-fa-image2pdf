@@ -1,0 +1,25 @@
+{
+    "name": "ksfraser/ksf-fa-image2pdf",
+    "description": "FrontAccounting module: upload images, convert to PDF, optional OCR, optional attach via ksf_FA_Attachments",
+    "type": "fa-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "KS Fraser"
+        }
+    ],
+    "repositories": [
+        { "type": "vcs", "url": "git@github.com:ksfraser/ksf-image2pdf.git" },
+        { "type": "vcs", "url": "git@github.com:ksfraser/ksf-ocr.git" }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "ksfraser/ksf-image2pdf": "*",
+        "ksfraser/ksf-ocr": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ksfraser\\FA_Image2Pdf\\": "src/Ksfraser/FA_Image2Pdf/"
+        }
+    }
+}
